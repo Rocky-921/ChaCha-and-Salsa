@@ -119,5 +119,5 @@ Filenames are appended with _salsa or _chacha for clarity.
 
 Both encryption and decryption use the same function logic.
 
-🧑‍💻 Author
+## 🧑‍💻 Author
 Prince Garg
