@@ -4,14 +4,14 @@ This project contains two C++ implementations of the **Salsa20** and **ChaCha20*
 
 ---
 
-## 📁 Files
+## Files
 
 - **Salsa20.cpp** — Implementation of the Salsa20 cipher with comments  
 - **ChaCha20.cpp** — Implementation of the ChaCha20 cipher with comments  
 
 ---
 
-## ⚙️ Compilation & Execution
+## Compilation & Execution
 
 ### **Compile**
 ```bash
@@ -21,7 +21,7 @@ Run
 ```bash
 ./a.out <input_file> <LOG_Capture(Y/N)> <optional_plaintext_file> <optional_output_file>
 ```
-## 🧩 Input File Format
+## Input File Format
 The input_file (e.g., init_state.txt) should contain the key, nonce (IV), and counter, all in hexadecimal format.
 
 For Salsa20
@@ -37,9 +37,9 @@ For ChaCha20
 4-byte counter
 ```
 
-📝 Note: A sample file init_state.txt is provided for reference.
+Note: A sample file init_state.txt is provided for reference.
 
-## 📥 Input and Output Behavior
+## Input and Output Behavior
 - **Plaintext Input File (optional):**
 If provided, the program reads the plaintext from this file.
 Otherwise, it reads a full line (with spaces) from the console.
@@ -51,7 +51,7 @@ Otherwise, the ciphertext is displayed on the console.
 - **LOG_Capture Argument:**
 Pass Y to enable logging or N to disable it.
 
-## 🧾 Log Output Includes
+## Log Output Includes
 The generated logs (when enabled) clearly display:
 
 - Plaintext
@@ -68,7 +68,7 @@ The generated logs (when enabled) clearly display:
 
 - Final state matrix (as byte array) used for XOR with plaintext
 
-## 🧠 Example Usage
+## Example Usage
 ### Sample Setup
 - init_state.txt contains key = nonce = counter = 0
 
@@ -87,7 +87,7 @@ $ ./chacha init_state.txt N SomeText.txt SomeText_Encrypted_Chacha.bin
 Execution Time: 2718.64 microseconds
 ```
 
-### 📊 File Statistics
+### File Statistics
 
 | File | Size (bytes) |
 |------|---------------|
@@ -97,7 +97,7 @@ Execution Time: 2718.64 microseconds
 
 > File sizes verified using the `stat` command.
 
-### 🔁 Decryption
+### Decryption
 Encryption and decryption are symmetric — running the same program on a ciphertext decrypts it.
 
 ### Salsa20 Decryption
@@ -114,10 +114,10 @@ $ diff SomeText_decrypted_Chacha.bin SomeText.txt
 ```
 The diff command confirms identical plaintext restoration.
 
-## 🧩 Notes
+## Notes
 Filenames are appended with _salsa or _chacha for clarity.
 
 Both encryption and decryption use the same function logic.
 
-## 🧑‍💻 Author
+## Author
 Prince Garg
